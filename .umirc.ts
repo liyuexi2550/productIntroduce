@@ -8,6 +8,7 @@ export default defineConfig({
   routes: [
     { path: '/', component: '@/pages/index' },
     { path: '/productIntroduce', component: '@/pages/productIntroduce/index' },
+    { component: '@/pages/404/index' },
   ],
   fastRefresh: {},
 });

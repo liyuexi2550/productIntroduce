@@ -20,10 +20,14 @@ let url = [
     }
 ]
 export default function ProductSuperiority() {
+    let state = {
+        Name:"产品优势",
+        EnglishName:"Produce Superiority"
+    } 
     return(
          <div className={styles.productSuperiority}>
              <div className={styles.productAndDescription}>
-                 <Mytitle Name="产品优势" EnglishName="Product Superiority"></Mytitle>
+                 <Mytitle Name={state.Name} EnglishName={state.EnglishName}></Mytitle>
                  <div className={styles.grid}>
                      {
                             url.map((item)=>{
